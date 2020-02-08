@@ -4,12 +4,10 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-import java.sql.Driver;
 import java.util.concurrent.TimeUnit;
 
 public class TestBase {
     public static WebDriver driver = null;
-
     public static void initialize() {
         if(driver == null) {
             if(Constants.browserName.equalsIgnoreCase("chrome")) {
@@ -36,4 +34,7 @@ public class TestBase {
         driver.close();
         driver = null;
     }
+
+
 }
+
